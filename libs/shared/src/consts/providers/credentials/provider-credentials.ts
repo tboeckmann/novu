@@ -565,3 +565,19 @@ export const kannelConfig: IConfigCredentials[] = [
   },
   ...smsConfigBase,
 ];
+
+export const mailchainConfig: IConfigCredentials[] = [
+  {
+    key: CredentialsKeyEnum.SecretKey,
+    displayName: 'Secret Recovery Phrase',
+    type: 'string',
+    required: true,
+  },
+  {
+    key: CredentialsKeyEnum.From,
+    displayName: 'From Address',
+    type: 'string',
+    required: false,
+  },
+  ...mailConfigBase,
+];

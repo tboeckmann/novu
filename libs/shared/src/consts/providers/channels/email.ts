@@ -13,6 +13,7 @@ import {
   outlook365Config,
   infobipEmailConfig,
   resendConfig,
+  mailchainConfig,
 } from '../credentials';
 import { IProviderConfig } from '../provider.interface';
 import { EmailProviderIdEnum } from '../provider.enum';
@@ -123,5 +124,13 @@ export const emailProviders: IProviderConfig[] = [
     credentials: resendConfig,
     docReference: 'https://resend.com/docs',
     logoFileName: { light: 'resend.svg', dark: 'resend.svg' },
+  },
+  {
+    id: EmailProviderIdEnum.Mailchain,
+    displayName: 'Mailchain Web3 Email',
+    channel: ChannelTypeEnum.EMAIL,
+    credentials: mailchainConfig,
+    docReference: 'https://docs.mailchain.com/',
+    logoFileName: { light: 'mailchain-onlight.svg', dark: 'mailchain-ondark.svg' },
   },
 ];
