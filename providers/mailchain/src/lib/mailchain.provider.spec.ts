@@ -1,7 +1,7 @@
 import { MailchainEmailProvider } from './mailchain.provider';
 
 const mockConfig = {
-  secretRecoveryPhrase: '',
+  secretKey: '',
   from: '',
 };
 

@@ -8,7 +8,7 @@ A Mailchain email provider library for [@novu/node](https://github.com/novuhq/no
 import { MailchainEmailProvider } from '@novu/mailchain';
 
 const provider = new MailchainEmailProvider({
-  secretRecoveryPhrase: process.env.SECRET_RECOVERY_PHRASE,
+  secretKey: process.env.MAILCHAIN_SECRET_RECOVERY_PHRASE,
   from: process.env.MAILCHAIN_FROM_ADDRESS
 });
 ```

@@ -13,12 +13,12 @@ export class MailchainEmailProvider implements IEmailProvider {
   private mailchainClient: Mailchain;
   constructor(
     private config: {
-      secretRecoveryPhrase: string;
+      secretKey: string;
       from: string;
     }
   ) {
     this.mailchainClient = Mailchain.fromSecretRecoveryPhrase(
-      this.config.secretRecoveryPhrase
+      this.config.secretKey
     );
   }
 
