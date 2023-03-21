@@ -577,7 +577,6 @@ export const mailchainConfig: IConfigCredentials[] = [
     key: CredentialsKeyEnum.From,
     displayName: 'From Address',
     type: 'string',
-    required: false,
+    required: true,
   },
-  ...mailConfigBase,
 ];
